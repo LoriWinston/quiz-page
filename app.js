@@ -24,9 +24,24 @@ userButton.addEventListener('click', () => {
     const firstAnswer = prompt('Are capybaras the largest rodent in the world?');
     
     if (countsAsAYes(firstAnswer)) correctAnswers++;
-    console.log(correctAnswers)
-});
 
+
+    const secondAnswer = prompt('Are capybaras native to South America?');
+    
+    if (countsAsAYes(secondAnswer)) correctAnswers++;
+
+
+
+    const thirdAnswer = prompt('Are capybaras carnivorous?');
+    
+    
+    
+    if (!countsAsAYes(thirdAnswer)) correctAnswers++;
+
+    const results = `Hey ${firstName} ${lastName}! You got ${correctAnswers} correct!`;
+
+    secretDiv.textContent = results
+});
 
 
 
